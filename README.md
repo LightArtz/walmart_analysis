@@ -1,4 +1,4 @@
-# Walmart Data Analysis: End-to-End SQL + Python Project P-9
+# Walmart Data Analysis: End-to-End SQL + Python Project
 
 ## Project Overview
 
@@ -12,7 +12,7 @@ This project is an end-to-end data analysis solution designed to extract critica
 ## Project Steps
 
 ### 1. Set Up the Environment
-   - **Tools Used**: Visual Studio Code (VS Code), Python, SQL (MySQL and PostgreSQL)
+   - **Tools Used**: Visual Studio Code (VS Code), Python, SQL (MySQL)
    - **Goal**: Create a structured workspace within VS Code and organize project folders for smooth development and data handling.
 
 ### 2. Set Up Kaggle API
@@ -29,7 +29,7 @@ This project is an end-to-end data analysis solution designed to extract critica
 ### 4. Install Required Libraries and Load Data
    - **Libraries**: Install necessary Python libraries using:
      ```bash
-     pip install pandas numpy sqlalchemy mysql-connector-python psycopg2
+     pip install pandas numpy sqlalchemy mysql-connector-python
      ```
    - **Loading Data**: Read the data into a Pandas DataFrame for initial analysis and transformations.
 
@@ -49,8 +49,8 @@ This project is an end-to-end data analysis solution designed to extract critica
    - **Enhance Dataset**: Adding this calculated field will streamline further SQL analysis and aggregation tasks.
 
 ### 8. Load Data into MySQL and PostgreSQL
-   - **Set Up Connections**: Connect to MySQL and PostgreSQL using `sqlalchemy` and load the cleaned data into each database.
-   - **Table Creation**: Set up tables in both MySQL and PostgreSQL using Python SQLAlchemy to automate table creation and data insertion.
+   - **Set Up Connections**: Connect to MySQL using `sqlalchemy` and load the cleaned data into each database.
+   - **Table Creation**: Set up tables in both MySQL using Python SQLAlchemy to automate table creation and data insertion.
    - **Verification**: Run initial SQL queries to confirm that the data has been loaded accurately.
 
 ### 9. SQL Analysis: Complex Queries and Business Problem Solving
@@ -62,14 +62,6 @@ This project is an end-to-end data analysis solution designed to extract critica
      - Profit margin analysis by branch and category.
    - **Documentation**: Keep clear notes of each query's objective, approach, and results.
 
-### 10. Project Publishing and Documentation
-   - **Documentation**: Maintain well-structured documentation of the entire process in Markdown or a Jupyter Notebook.
-   - **Project Publishing**: Publish the completed project on GitHub or any other version control platform, including:
-     - The `README.md` file (this document).
-     - Jupyter Notebooks (if applicable).
-     - SQL query scripts.
-     - Data files (if possible) or steps to access them.
-
 ---
 
 ## Requirements
@@ -77,7 +69,7 @@ This project is an end-to-end data analysis solution designed to extract critica
 - **Python 3.8+**
 - **SQL Databases**: MySQL, PostgreSQL
 - **Python Libraries**:
-  - `pandas`, `numpy`, `sqlalchemy`, `mysql-connector-python`, `psycopg2`
+  - `pandas`, `numpy`, `sqlalchemy`, `mysql-connector-python`
 - **Kaggle API Key** (for data downloading)
 
 ## Getting Started
@@ -97,12 +89,10 @@ This project is an end-to-end data analysis solution designed to extract critica
 ## Project Structure
 
 ```plaintext
-|-- data/                     # Raw data and transformed data
-|-- sql_queries/              # SQL scripts for analysis and queries
-|-- notebooks/                # Jupyter notebooks for Python analysis
+|-- query.sql                 # SQL scripts for analysis and queries
+|-- index.ipynb               # Jupyter notebooks for loading, cleaning, and processing data
 |-- README.md                 # Project documentation
 |-- requirements.txt          # List of required Python libraries
-|-- main.py                   # Main script for loading, cleaning, and processing data
 ```
 ---
 
